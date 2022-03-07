@@ -13,17 +13,17 @@ pipeline {
             }
         }
         stage ('Build with Maven') {
-            when {
-                branch 'test'
-            }
+            // when {
+            //     branch 'test'
+            // }
             steps {
                 sh 'mvn clean package'
             }
         }
         stage ('Code quality check with Sonarqube') {
-             when {
-                branch 'test'
-            }
+            //  when {
+            //     branch 'test'
+            // }
             steps {
                 withSonarQubeEnv('sonarqube-8.9.7') {
                     sh "mvn sonar:sonar"
