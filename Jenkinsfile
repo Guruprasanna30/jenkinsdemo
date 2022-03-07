@@ -4,7 +4,7 @@ pipeline {
         maven 'maven-3.8'
     }
     stages {
-        stage ('Code Checkout'){
+        stage ('Code Checkout2'){
             steps {
                 git 'https://github.com/Guruprasanna30/javaapp.git'
             }
