@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    // parameters {
-    //     string (name: 'GIT_URL', description: 'Enter git url')
-    // }
     tools {
         maven 'maven-3.8'
     }
